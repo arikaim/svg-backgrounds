@@ -1,0 +1,22 @@
+<svg  
+    viewBox="0 0 1440 400" 
+    xmlns="http://www.w3.org/2000/svg" 
+    preserveAspectRatio="none"   
+    class="{{ position|default('absolute') }}
+        {{ class }} 
+        {{ color }} 
+        {{ size|default('h-full w-full') }}">
+    <defs>
+        <linearGradient id="gradient" x1="1%" y1="8%" x2="99%" y2="42%">
+            <stop offset="5%" stop-color="{{ gradient.from|default('#CFFAFE') }}"></stop>
+            <stop offset="95%" stop-color="{{ gradient.to|default('#67E8F9') }}"></stop>
+        </linearGradient>
+    </defs>
+    <path 
+        d="M 0,400 C 0,400 0,200 0,200 C 90.85714285714286,235.28571428571428 181.71428571428572,270.57142857142856 301,273 C 420.2857142857143,275.42857142857144 568,245 700,223 C 832,201 948.2857142857142,187.42857142857144 1069,185 C 1189.7142857142858,182.57142857142856 1314.857142857143,191.28571428571428 1440,200 C 1440,200 1440,400 1440,400 Z" 
+        stroke="{{ stroke.color|default('none') }}" 
+        stroke-width="{{ stroke.width|default(0) }}" 
+        fill="url(#gradient)" 
+        transform="rotate({{ rotate|default('-180') }} 720 200)">
+    </path>
+</svg>

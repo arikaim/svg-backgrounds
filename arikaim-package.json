@@ -1,0 +1,10 @@
+{
+    "title": "SVG Backgrounds",
+    "package-type": "components",
+    "name": "backgrounds",
+    "version": "1.1.12",
+    "description": "Svg backgrounds components library.",
+    "repository": "https://github.com/arikaim/svg-backgrounds.git",
+    "require": {       
+    }
+}

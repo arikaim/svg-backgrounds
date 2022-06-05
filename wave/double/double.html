@@ -1,0 +1,35 @@
+<svg 
+    viewBox="0 0 1440 500" 
+    xmlns="http://www.w3.org/2000/svg" 
+    preserveAspectRatio="none"   
+    class="{{ position|default('absolute') }}
+    {{ class }} 
+    {{ color }} 
+    {{ size|default('h-full w-full') }}">
+    <defs>
+        <linearGradient id="gradient" x1="1%" y1="58%" x2="99%" y2="42%">
+            <stop offset="5%" stop-color="{{ gradient.from|default('#BAE6FD') }}"></stop>
+            <stop offset="95%" stop-color="{{ gradient.to|default('#7DD3FC') }}"></stop>
+        </linearGradient>
+    </defs>
+    <path 
+        d="M 0,500 C 0,500 0,166 0,166 C 205.71428571428572,213.42857142857142 822.8571428571429,189.71428571428572 1440,166 C 1440,166 1440,500 1440,500 Z" 
+        stroke="{{ stroke.color|default('none') }}" 
+        stroke-width="{{ stroke.width|default(0) }}" 
+        fill="url(#gradient)" 
+        transform="rotate({{ rotate|default('-180') }} 720 150)">
+    </path>
+    <defs>
+        <linearGradient id="gradient-2" x1="1%" y1="58%" x2="99%" y2="42%">
+            <stop offset="5%" stop-color="{{ gradient2.from|default('#0693e3ff') }}"></stop>
+            <stop offset="95%" stop-color="{{ gradient2.to|default('#8ed1fcff') }}"></stop>
+        </linearGradient>
+    </defs>
+    <path 
+        d="M 0,500 C 0,500 0,333 0,333 C 205.71428571428572,428.14285714285717 822.8571428571429,380.57142857142856 1440,333 C 1440,333 1440,500 1440,500 Z" 
+        stroke="{{ stroke.color|default('none') }}" 
+        stroke-width="{{ stroke.width|default(0) }}" 
+        fill="url(#gradient-2)" 
+        transform="rotate({{ rotate|default('-180') }} 720 220)">
+    </path>
+</svg>

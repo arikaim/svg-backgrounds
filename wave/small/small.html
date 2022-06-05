@@ -1,0 +1,21 @@
+<svg  
+    viewBox="0 0 1440 400" 
+    xmlns="http://www.w3.org/2000/svg" 
+    preserveAspectRatio="none"   
+    class="{{ position|default('absolute') }}
+        {{ class }} 
+        {{ color }} 
+        {{ size|default('h-full w-full') }}">
+    <defs>
+        <linearGradient id="gradient" x1="1%" y1="58%" x2="99%" y2="42%">
+            <stop offset="5%" stop-color="{{ gradient.from|default('#BAE6FD') }}"></stop>
+            <stop offset="95%" stop-color="{{ gradient.to|default('#7DD3FC') }}"></stop>
+        </linearGradient>
+    </defs>
+    <path d="M 0,400 C 0,400 0,200 0,200 C 123.46666666666664,206 246.93333333333328,212 415,218 C 583.0666666666667,224 795.7333333333333,230 974,227 C 1152.2666666666667,224 1296.1333333333332,212 1440,200 C 1440,200 1440,400 1440,400 Z" 
+        stroke="{{ stroke.color|default('none') }}" 
+        stroke-width="{{ stroke.width|default(0) }}" 
+        fill="url(#gradient)" 
+        transform="rotate({{ rotate|default('-180') }} 720 150)">
+    </path>
+</svg>
